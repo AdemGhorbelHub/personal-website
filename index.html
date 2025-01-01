@@ -45,16 +45,18 @@
     </section>
 
     <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>Dedicated to leveraging expertise in strategy, management, and artificial intelligence to drive impactful initiatives.  
-                   Passionate about continuous learning and knowledge sharing, fostering growth and innovation within the professional community.</p>
-                <p>Currently expanding reach as a content creator, aiming to provide valuable insights and practical advice on strategy, management, and AI to help professionals and organizations thrive.
-                </p>
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Dedicated to leveraging expertise in strategy, management, and artificial intelligence to drive impactful initiatives.  
+               Passionate about continuous learning and knowledge sharing, fostering growth and innovation within the professional community.</p>
+            <p>Currently expanding reach as a content creator, aiming to provide valuable insights and practical advice on strategy, management, and AI to help professionals and organizations thrive.</p>
+            
+            <div class="skills-carousel">
+                <button class="carousel-button prev" onclick="scrollSkills(-1)">&#10094;</button>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Frontend</h3>
+                        <h3>Public Services</h3>
                         <ul>
                             <li>React</li>
                             <li>Vue.js</li>
@@ -63,7 +65,7 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Backend</h3>
+                        <h3>Financial Services</h3>
                         <ul>
                             <li>Node.js</li>
                             <li>Python</li>
@@ -72,7 +74,7 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>DevOps</h3>
+                        <h3>Corporate Services</h3>
                         <ul>
                             <li>AWS</li>
                             <li>Docker</li>
@@ -81,8 +83,15 @@
                         </ul>
                     </div>
                 </div>
+                <button class="carousel-button next" onclick="scrollSkills(1)">&#10095;</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSkill(0)"></span>
+                <span class="indicator" onclick="goToSkill(1)"></span>
+                <span class="indicator" onclick="goToSkill(2)"></span>
             </div>
         </div>
+    </div>
     </section>
 
     <section id="experiences" class="experiences-section">
