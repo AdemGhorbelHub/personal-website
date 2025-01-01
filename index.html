@@ -44,55 +44,76 @@
             </div>
         </div>
     </section>
-
+    
+    <!-- About Me Section -->
     <section id="about" class="about-section">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>Dedicated to leveraging expertise in strategy, management, and artificial intelligence to drive impactful initiatives.  
-               Passionate about continuous learning and knowledge sharing, fostering growth and innovation within the professional community.</p>
-            <p>Currently expanding reach as a content creator, aiming to provide valuable insights and practical advice on strategy, management, and AI to help professionals and organizations thrive.</p>
-            
-            <div class="skills-carousel">
-                <button class="carousel-button prev" onclick="scrollSkills(-1)">&#10094;</button>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Public Services</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>Vue.js</li>
-                            <li>TypeScript</li>
-                            <li>Tailwind CSS</li>
-                        </ul>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Dedicated to leveraging expertise in strategy, management, and artificial intelligence to drive impactful initiatives.  
+                   Passionate about continuous learning and knowledge sharing, fostering growth and innovation within the professional community.</p>
+                <p>Currently expanding reach as a content creator, aiming to provide valuable insights and practical advice on strategy, management, and AI to help professionals and organizations thrive.</p>
+                
+                <!-- Skills Carousel -->
+                <div class="skills-carousel">
+                    <button class="carousel-button prev" onclick="scrollSkills(-1)">&#10094;</button>
+                    <div class="skills-grid">
+                        <!-- Frontend Box -->
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <div class="image-slideshow">
+                                <img src="images/frontend1.jpg" alt="Frontend 1" class="active">
+                                <img src="images/frontend2.jpg" alt="Frontend 2">
+                                <img src="images/frontend3.jpg" alt="Frontend 3">
+                            </div>
+                            <ul>
+                                <li>React</li>
+                                <li>Vue.js</li>
+                                <li>TypeScript</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                        <!-- Backend Box -->
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <div class="image-slideshow">
+                                <img src="images/backend1.jpg" alt="Backend 1" class="active">
+                                <img src="images/backend2.jpg" alt="Backend 2">
+                                <img src="images/backend3.jpg" alt="Backend 3">
+                            </div>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                        <!-- DevOps Box -->
+                        <div class="skill-category">
+                            <h3>DevOps</h3>
+                            <div class="image-slideshow">
+                                <img src="images/devops1.jpg" alt="DevOps 1" class="active">
+                                <img src="images/devops2.jpg" alt="DevOps 2">
+                                <img src="images/devops3.jpg" alt="DevOps 3">
+                            </div>
+                            <ul>
+                                <li>AWS</li>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>CI/CD</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Financial Services</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Python</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Corporate Services</h3>
-                        <ul>
-                            <li>AWS</li>
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
-                            <li>CI/CD</li>
-                        </ul>
-                    </div>
+                    <button class="carousel-button next" onclick="scrollSkills(1)">&#10095;</button>
                 </div>
-                <button class="carousel-button next" onclick="scrollSkills(1)">&#10095;</button>
-            </div>
-            <div class="carousel-indicators">
-                <span class="indicator active" onclick="goToSkill(0)"></span>
-                <span class="indicator" onclick="goToSkill(1)"></span>
-                <span class="indicator" onclick="goToSkill(2)"></span>
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSkill(0)"></span>
+                    <span class="indicator" onclick="goToSkill(1)"></span>
+                    <span class="indicator" onclick="goToSkill(2)"></span>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
     <section id="experiences" class="experiences-section">
