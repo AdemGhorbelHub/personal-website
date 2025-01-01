@@ -161,18 +161,26 @@ section h2 {
     margin: 0 auto;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+/* Skills Carousel */
+.skills-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
     margin-top: 2rem;
 }
 
+.skills-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 .skill-category {
+    flex: 0 0 100%;
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .skill-category h3 {
@@ -195,6 +203,53 @@ section h2 {
     position: absolute;
     left: 0;
     color: var(--primary-color);
+}
+
+/* Carousel Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-indicators .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators .indicator.active {
+    background-color: var(--primary-color);
 }
 
 /* Contact Form */
