@@ -73,3 +73,23 @@
 .timeline-content p {
     margin: 0.5rem 0;
 }
+/* Company Links */
+.company-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.company-links a {
+    display: inline-block;
+}
+
+.company-links img.icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.company-links img.icon:hover {
+    transform: scale(1.2);
+}
