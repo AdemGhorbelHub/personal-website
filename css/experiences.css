@@ -1,112 +1,75 @@
-/* experiences.css */
-.experiences {
-    padding: 4rem 0;
-    background: #f8f9fa;
+/* Experiences Section */
+.experiences-section {
+    background: var(--gray-100);
+    padding: 2rem 0;
 }
 
 .experience-timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.experience-timeline::after {
+.experience-timeline::before {
     content: '';
     position: absolute;
-    width: 4px;
-    background-color: #2563eb;
     top: 0;
-    bottom: 0;
     left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--primary-color);
     transform: translateX(-50%);
 }
 
-.experience-card {
-    padding: 10px 40px;
+.timeline-item {
     position: relative;
     width: 50%;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
+    padding: 1.5rem;
+    box-sizing: border-box;
 }
 
-.experience-card.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.experience-card.left {
+.timeline-item.left {
     left: 0;
+    text-align: right;
 }
 
-.experience-card.right {
+.timeline-item.right {
     left: 50%;
+    text-align: left;
 }
 
-.experience-content {
-    padding: 20px;
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 1.5rem;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.left::before {
+    right: -10px;
+}
+
+.timeline-item.right::before {
+    left: -10px;
+}
+
+.timeline-content {
     background: white;
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.experience-content h3 {
-    margin: 0 0 10px 0;
-    color: #1f2937;
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--primary-color);
 }
 
-.experience-content h4 {
-    margin: 0 0 10px 0;
-    color: #4b5563;
-}
-
-.tech-stack {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.tech-tag {
-    background: #e5e7eb;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    color: #4b5563;
-}
-
-.experience-gallery {
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-}
-
-.experience-gallery img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.experience-gallery img:hover {
-    transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-    .experience-timeline::after {
-        left: 31px;
-    }
-    
-    .experience-card {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-    
-    .experience-card.right {
-        left: 0;
-    }
+.timeline-content p {
+    margin: 0.5rem 0;
 }
