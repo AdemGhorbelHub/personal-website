@@ -12,6 +12,14 @@ fetch('data/experiences.json')
                     <h3>${experience.title}</h3>
                     <p><strong>${experience.company}</strong> | ${experience.duration}</p>
                     <p>${experience.description}</p>
+                    <div class="company-links">
+                        <a href="${experience.website}" target="_blank">
+                            <img src="images/icons/website.png" alt="Website" class="icon">
+                        </a>
+                        <a href="${experience.linkedin}" target="_blank">
+                            <img src="images/icons/linkedin.png" alt="LinkedIn" class="icon">
+                        </a>
+                    </div>
                 </div>
             `;
             timelineItem.innerHTML = content;
