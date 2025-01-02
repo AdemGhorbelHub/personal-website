@@ -37,6 +37,10 @@ function startImageSlideshow() {
         const images = slideshow.querySelectorAll('img');
         let currentImageIndex = 0;
 
+        // Set the first image as active
+        images[currentImageIndex].classList.add('active');
+
+        // Transition images every 5 seconds
         setInterval(() => {
             images[currentImageIndex].classList.remove('active');
             currentImageIndex = (currentImageIndex + 1) % images.length;
@@ -46,5 +50,7 @@ function startImageSlideshow() {
 }
 
 // Initialize
-startAutoScroll();
-startImageSlideshow();
+document.addEventListener('DOMContentLoaded', () => {
+    startAutoScroll();
+    startImageSlideshow();
+});
