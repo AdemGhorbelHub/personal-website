@@ -439,3 +439,19 @@ footer {
         display: none;
     }
 }
+/* Highlight Active Section */
+section {
+    padding: 4rem 0;
+    transition: background 0.3s ease;
+}
+
+section.active {
+    background: rgba(0, 123, 255, 0.1); /* Light blue background for active section */
+}
+
+/* Highlight Active Navigation Link */
+.nav-links a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+}
