@@ -2,6 +2,11 @@
 particlesJS.load('particles-js', 'particles.json', function() {
     console.log('Particles.js loaded');
 });
+// Initialize AOS
+AOS.init({
+    duration: 1000, // Animation duration
+    once: true // Animate only once
+});
 // Parallax Effect for Hero Section Video
 window.addEventListener('scroll', () => {
     const video = document.getElementById('hero-video');
