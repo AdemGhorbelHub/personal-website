@@ -1,27 +1,4 @@
-/* Experiences Section */
-.experiences-section {
-    background: var(--gray-100);
-    padding: 2rem 0;
-}
-
-.experience-timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-.experience-timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background: var(--primary-color);
-    transform: translateX(-50%);
-}
-
+/* Timeline Item */
 .timeline-item {
     position: relative;
     width: 50%;
@@ -58,6 +35,7 @@
     left: -10px;
 }
 
+/* Timeline Content */
 .timeline-content {
     background: white;
     padding: 1.5rem;
@@ -70,18 +48,29 @@
     color: var(--primary-color);
 }
 
-.timeline-content p {
+/* Company Info */
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     margin: 0.5rem 0;
 }
-/* Company Links */
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
 .company-links {
     display: flex;
     gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.company-links a {
-    display: inline-block;
+    margin-left: auto;
 }
 
 .company-links img.icon {
@@ -92,4 +81,16 @@
 
 .company-links img.icon:hover {
     transform: scale(1.2);
+}
+
+/* Duration and Description */
+.duration {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.description {
+    margin: 0.5rem 0;
+    color: #333;
 }
