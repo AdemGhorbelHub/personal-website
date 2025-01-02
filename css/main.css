@@ -249,11 +249,11 @@ section h2 {
 }
 
 .carousel-button.prev {
-    left: 10px; /* Move outside the box */
+    left: -500px; /* Move outside the box */
 }
 
 .carousel-button.next {
-    right: 10px; /* Move outside the box */
+    right: -500px; /* Move outside the box */
 }
 
 /* Carousel Indicators */
