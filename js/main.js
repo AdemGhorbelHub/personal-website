@@ -1,5 +1,5 @@
 // Initialize Particle.js
-particlesJS.load('particles-js', 'particles.json', function() {
+particlesJS.load('particles-js', 'data/particles.json', function() {
     console.log('Particles.js loaded');
 });
 // Initialize AOS
