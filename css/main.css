@@ -51,6 +51,11 @@ body {
     background: var(--primary-color);
     width: 0;
 }
+
+.linkedin-carousel {
+    margin: 2rem 0;
+    overflow: hidden;
+}
 /* Navbar Styles */
 .navbar {
     background: var(--bg-color);
