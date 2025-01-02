@@ -455,3 +455,6 @@ section.active {
     font-weight: bold;
     border-bottom: 2px solid var(--primary-color);
 }
+html {
+    scroll-behavior: smooth;
+}
