@@ -1,20 +1,20 @@
 [
     {
         "title": "Strategy Consultant",
-        "company": "XYZ Consulting",
-        "logo": "images/logos/xyz-consulting.png",
-        "website": "https://xyzconsulting.com",
-        "linkedin": "https://linkedin.com/company/xyz-consulting",
-        "duration": "Jan 2020 - Present",
-        "description": "Led strategic initiatives for Fortune 500 companies, focusing on digital transformation and AI integration."
+        "company": "Matine Consulting",
+        "logo": "images/logos/logo-matineconsulting.png",
+        "website": "https://www.matineconsulting.com/",
+        "linkedin": "https://www.linkedin.com/company/matine-consulting-%D9%85%D8%AA%D9%8A%D9%86/",
+        "duration": "Jun 2023 - Present",
+        "description": "Led strategic initiatives for international companies, focusing on business transformation and quality assurance."
     },
     {
-        "title": "Management Analyst",
-        "company": "ABC Corp",
-        "logo": "images/logos/abc-corp.png",
-        "website": "https://abccorp.com",
-        "linkedin": "https://linkedin.com/company/abc-corp",
-        "duration": "Jun 2017 - Dec 2019",
+        "title": "Business Analyst",
+        "company": "Wavestone",
+        "logo": "images/logos/logo-wavestone.png",
+        "website": "https://www.wavestone.com/en/",
+        "linkedin": "https://www.linkedin.com/company/wavestone/",
+        "duration": "Jan 2023 - May 2023",
         "description": "Analyzed business processes and recommended improvements to enhance operational efficiency."
     }
 ]
