@@ -6,35 +6,42 @@ window.addEventListener('scroll', () => {
 });
 // Highlight Active Section on Scroll
 document.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    let isScrolling;
+    window.clearTimeout(isScrolling);
 
-    let currentSection = '';
+    // Debounce scroll event for better performance
+    isScrolling = setTimeout(() => {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
 
-    // Find the current section in view
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop - sectionHeight / 3) {
-            currentSection = section.getAttribute('id');
-        }
-    });
+        let currentSection = '';
 
-    // Highlight the active section
-    sections.forEach(section => {
-        if (section.getAttribute('id') === currentSection) {
-            section.classList.add('active');
-        } else {
-            section.classList.remove('active');
-        }
-    });
+        // Find the current section in view
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            // Offset Adjustment: Adjust for fixed header or other layout elements
+            if (window.scrollY >= sectionTop - sectionHeight / 3 - 100) { // Adjust offset as needed
+                currentSection = section.getAttribute('id');
+            }
+        });
 
-    // Highlight the active navigation link
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === `#${currentSection}`) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
+        // Highlight the active section
+        sections.forEach(section => {
+            if (section.getAttribute('id') === currentSection) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+
+        // Highlight the active navigation link
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }, 100); // Adjust debounce delay as needed
 });
