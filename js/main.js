@@ -13,6 +13,13 @@ window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
     video.style.transform = `translateY(${scrollPosition * 0.5}px)`; // Adjust the multiplier for the effect intensity
 });
+// Initialize Typed.js
+const typed = new Typed('#typed-text', {
+    strings: ["Strategy Consultant", "Management Expert", "AI Enthusiast"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+});
 // Highlight Active Section on Scroll
 document.addEventListener('scroll', () => {
     let isScrolling;
