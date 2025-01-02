@@ -2,17 +2,19 @@
     {
         "title": "Strategy Consultant",
         "company": "XYZ Consulting",
-        "duration": "Jan 2020 - Present",
-        "description": "Led strategic initiatives for Fortune 500 companies, focusing on digital transformation and AI integration.",
+        "logo": "images/logos/xyz-consulting.png",
         "website": "https://xyzconsulting.com",
-        "linkedin": "https://linkedin.com/company/xyz-consulting"
+        "linkedin": "https://linkedin.com/company/xyz-consulting",
+        "duration": "Jan 2020 - Present",
+        "description": "Led strategic initiatives for Fortune 500 companies, focusing on digital transformation and AI integration."
     },
     {
         "title": "Management Analyst",
         "company": "ABC Corp",
-        "duration": "Jun 2017 - Dec 2019",
-        "description": "Analyzed business processes and recommended improvements to enhance operational efficiency.",
+        "logo": "images/logos/abc-corp.png",
         "website": "https://abccorp.com",
-        "linkedin": "https://linkedin.com/company/abc-corp"
+        "linkedin": "https://linkedin.com/company/abc-corp",
+        "duration": "Jun 2017 - Dec 2019",
+        "description": "Analyzed business processes and recommended improvements to enhance operational efficiency."
     }
 ]
