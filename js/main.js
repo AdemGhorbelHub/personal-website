@@ -2,6 +2,14 @@
 particlesJS.load('particles-js', 'data/particles.json', function() {
     console.log('Particles.js loaded');
 });
+// Update Progress Bar on Scroll
+window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+    document.getElementById('progress-bar').style.width = scrollPercent + '%';
+});
 // Initialize AOS
 AOS.init({
     duration: 1000, // Animation duration
