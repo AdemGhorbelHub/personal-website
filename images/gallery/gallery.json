@@ -1,0 +1,17 @@
+[
+    {
+        "src": "images/gallery/photo1.jpg",
+        "alt": "Photo 1",
+        "caption": "Strategy Workshop"
+    },
+    {
+        "src": "images/gallery/photo2.jpg",
+        "alt": "Photo 2",
+        "caption": "Team Collaboration"
+    },
+    {
+        "src": "images/gallery/photo3.jpg",
+        "alt": "Photo 3",
+        "caption": "Client Meeting"
+    }
+]
