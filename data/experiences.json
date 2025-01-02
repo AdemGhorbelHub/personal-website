@@ -3,18 +3,16 @@
         "title": "Strategy Consultant",
         "company": "XYZ Consulting",
         "duration": "Jan 2020 - Present",
-        "description": "Led strategic initiatives for Fortune 500 companies, focusing on digital transformation and AI integration."
+        "description": "Led strategic initiatives for Fortune 500 companies, focusing on digital transformation and AI integration.",
+        "website": "https://xyzconsulting.com",
+        "linkedin": "https://linkedin.com/company/xyz-consulting"
     },
     {
         "title": "Management Analyst",
         "company": "ABC Corp",
         "duration": "Jun 2017 - Dec 2019",
-        "description": "Analyzed business processes and recommended improvements to enhance operational efficiency."
-    },
-    {
-        "title": "Business Development Manager",
-        "company": "DEF Inc",
-        "duration": "Aug 2015 - May 2017",
-        "description": "Developed and executed strategies to expand market share and drive revenue growth."
+        "description": "Analyzed business processes and recommended improvements to enhance operational efficiency.",
+        "website": "https://abccorp.com",
+        "linkedin": "https://linkedin.com/company/abc-corp"
     }
 ]
