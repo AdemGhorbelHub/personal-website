@@ -16,5 +16,15 @@
         "linkedin": "https://www.linkedin.com/company/wavestone/",
         "duration": "Jan 2023 - May 2023",
         "description": "Analyzed business processes and recommended improvements to enhance operational efficiency."
+    },
+
+    {
+        "title": "Research Intern",
+        "company": "CEA",
+        "logo": "images/logos/logo-cea.png",
+        "website": "https://www.cea.fr/",
+        "linkedin": "https://www.linkedin.com/company/cea/",
+        "duration": "Apr 2022 - Sep 2022",
+        "description": "3D imaging and modeling of PEMFC fuel cell electrodes."
     }
 ]
