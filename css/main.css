@@ -458,3 +458,10 @@ section.active {
 html {
     scroll-behavior: smooth;
 }
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000; /* Background color */
+    z-index: -1; /* Place behind other content */
+}
