@@ -62,7 +62,14 @@ body {
 .nav-links a:hover {
     color: var(--primary-color);
 }
+.card-3d {
+    transform: perspective(1000px) rotateY(20deg);
+    transition: transform 0.5s ease;
+}
 
+.card-3d:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
 /* Hero Section */
 .hero-section {
     position: relative;
