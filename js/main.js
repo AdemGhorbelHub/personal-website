@@ -1,3 +1,7 @@
+// Initialize Particle.js
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('Particles.js loaded');
+});
 // Parallax Effect for Hero Section Video
 window.addEventListener('scroll', () => {
     const video = document.getElementById('hero-video');
