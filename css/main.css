@@ -125,6 +125,48 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* LinkedIn Posts Page */
+#linkedin-posts {
+    padding: 4rem 0;
+    background: var(--gray-100);
+    text-align: center;
+}
+
+#linkedin-posts h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.linkedin-carousel {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.carousel-item {
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.view-on-linkedin {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0077b5; /* LinkedIn Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.view-on-linkedin:hover {
+    background: darken(#0077b5, 10%);
+}
+
 /* Slick Carousel Customization */
 .slick-prev, .slick-next {
     background: var(--primary-color);
