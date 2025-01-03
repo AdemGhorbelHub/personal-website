@@ -28,6 +28,20 @@ const typed = new Typed('#typed-text', {
     backSpeed: 30,
     loop: true
 });
+
+// Initialize Slick Carousel
+$('.linkedin-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>'
+});
 // Initialize Slick Carousel
 $('.linkedin-carousel').slick({
     dots: true,
