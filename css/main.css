@@ -92,7 +92,7 @@ body {
 }
 
 .image-slideshow {
-    position: relative;
+    position: relative; /* image slideshow */
     height: 200px;
     overflow: hidden;
     margin-bottom: 1.5rem;
