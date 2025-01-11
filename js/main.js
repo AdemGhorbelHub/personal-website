@@ -31,17 +31,6 @@ const typed = new Typed('#typed-text', {
 
 // LinkedIn Posts Carousel
 let currentLinkedInPostIndex = 0;
-let autoScrollInterval;
-
-function startAutoScroll() {
-    autoScrollInterval = setInterval(() => {
-        scrollLinkedInPosts(1); // Move to the next post
-    }, 5000); // Change posts every 5 seconds (adjust as needed)
-}
-
-function stopAutoScroll() {
-    clearInterval(autoScrollInterval);
-}
 
 function scrollLinkedInPosts(direction) {
     const postsGrid = document.querySelector('.linkedin-posts-grid');
@@ -78,12 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkedinPostsGrid = document.querySelector('.linkedin-posts-grid');
     linkedinPostsGrid.style.transform = 'translateX(0)';
     updateLinkedInPostIndicators();
-    startAutoScroll(); // Start auto-scroll when the page loads
 });
-
-// Pause auto-scroll when the user interacts with the carousel
-document.querySelector('.linkedin-carousel').addEventListener('mouseenter', stopAutoScroll);
-document.querySelector('.linkedin-carousel').addEventListener('mouseleave', startAutoScroll);
 // Highlight Active Section on Scroll
 document.addEventListener('scroll', () => {
     let isScrolling;
