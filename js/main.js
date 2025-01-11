@@ -29,31 +29,44 @@ const typed = new Typed('#typed-text', {
     loop: true
 });
 
-// Initialize Slick Carousel
-$('.linkedin-carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>'
-});
-// Initialize Slick Carousel
-$('.linkedin-carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>'
+// LinkedIn Posts Carousel
+let currentLinkedInPostIndex = 0;
+
+function scrollLinkedInPosts(direction) {
+    const postsGrid = document.querySelector('.linkedin-posts-grid');
+    const posts = document.querySelectorAll('.linkedin-post');
+    const totalPosts = posts.length;
+
+    currentLinkedInPostIndex = (currentLinkedInPostIndex + direction + totalPosts) % totalPosts;
+    postsGrid.style.transform = `translateX(-${currentLinkedInPostIndex * 100}%)`;
+
+    updateLinkedInPostIndicators();
+}
+
+function goToLinkedInPost(index) {
+    const postsGrid = document.querySelector('.linkedin-posts-grid');
+    currentLinkedInPostIndex = index;
+    postsGrid.style.transform = `translateX(-${currentLinkedInPostIndex * 100}%)`;
+
+    updateLinkedInPostIndicators();
+}
+
+function updateLinkedInPostIndicators() {
+    const indicators = document.querySelectorAll('.carousel-indicators .indicator');
+    indicators.forEach((indicator, i) => {
+        if (i === currentLinkedInPostIndex) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+}
+
+// Initialize LinkedIn Posts Carousel
+document.addEventListener('DOMContentLoaded', () => {
+    const linkedinPostsGrid = document.querySelector('.linkedin-posts-grid');
+    linkedinPostsGrid.style.transform = 'translateX(0)';
+    updateLinkedInPostIndicators();
 });
 // Highlight Active Section on Scroll
 document.addEventListener('scroll', () => {
