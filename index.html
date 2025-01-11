@@ -37,7 +37,7 @@
                 <a href="#experiences">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#articles">Articles</a>
-                <a href="linkedin-posts.html">LinkedIn Posts</a> <!-- Link to linkedin-posts.html -->
+                <a href="linkedin-posts">LinkedIn Posts</a> <!-- Link to linkedin-posts.html -->
                 <a href="contact.html">Contact</a> <!-- Link to contact.html -->
             </div>
         </div>
@@ -192,39 +192,74 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- LinkedIn Posts Preview Section -->
-    <section id="linkedin-preview" data-aos="fade-up">
+    <!-- LinkedIn Posts Section -->
+    <section id="linkedin-posts" class="linkedin-posts-section" data-aos="fade-up">
         <div class="card-3d">
             <div class="container">
                 <h2>Latest LinkedIn Posts</h2>
-                <div class="posts-preview">
-                    <div class="post-item">
-                        <h3>Post Title 1</h3>
-                        <p>Brief description of the post. Click to read more...</p>
-                        <div class="post-links">
-                            <a href="linkedin-posts.html#post1" class="read-more">Read More</a>
-                            <a href="https://www.linkedin.com/embed/feed/update/urn:li:share:7241342997123022848" target="_blank" class="view-on-linkedin">View on LinkedIn</a>
+                <div class="linkedin-carousel">
+                    <button class="carousel-button prev" onclick="scrollLinkedInPosts(-1)">&#10094;</button>
+                    <div class="linkedin-posts-grid">
+                        <!-- LinkedIn Post 1 -->
+                        <div class="linkedin-post">
+                            <div class="post-header">
+                                <h3>Post Title 1</h3>
+                                <p>Brief description of the post. Click to read more...</p>
+                            </div>
+                            <div class="post-content">
+                                <div class="image-slideshow">
+                                    <img src="images/linkedin-posts/post1-1.jpg" alt="Post 1 Image 1">
+                                    <img src="images/linkedin-posts/post1-2.jpg" alt="Post 1 Image 2">
+                                    <img src="images/linkedin-posts/post1-3.jpg" alt="Post 1 Image 3">
+                                </div>
+                                <div class="post-links">
+                                    <a href="https://www.linkedin.com/embed/feed/update/urn:li:share:7241342997123022848" target="_blank" class="view-on-linkedin">View on LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LinkedIn Post 2 -->
+                        <div class="linkedin-post">
+                            <div class="post-header">
+                                <h3>Post Title 2</h3>
+                                <p>Brief description of the post. Click to read more...</p>
+                            </div>
+                            <div class="post-content">
+                                <div class="image-slideshow">
+                                    <img src="images/linkedin-posts/post2-1.jpg" alt="Post 2 Image 1">
+                                    <img src="images/linkedin-posts/post2-2.jpg" alt="Post 2 Image 2">
+                                    <img src="images/linkedin-posts/post2-3.jpg" alt="Post 2 Image 3">
+                                </div>
+                                <div class="post-links">
+                                    <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7237728418488832000" target="_blank" class="view-on-linkedin">View on LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LinkedIn Post 3 -->
+                        <div class="linkedin-post">
+                            <div class="post-header">
+                                <h3>Post Title 3</h3>
+                                <p>Brief description of the post. Click to read more...</p>
+                            </div>
+                            <div class="post-content">
+                                <div class="image-slideshow">
+                                    <img src="images/linkedin-posts/post3-1.jpg" alt="Post 3 Image 1">
+                                    <img src="images/linkedin-posts/post3-2.jpg" alt="Post 3 Image 2">
+                                    <img src="images/linkedin-posts/post3-3.jpg" alt="Post 3 Image 3">
+                                </div>
+                                <div class="post-links">
+                                    <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7256602882702000130" target="_blank" class="view-on-linkedin">View on LinkedIn</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="post-item">
-                        <h3>Post Title 2</h3>
-                        <p>Brief description of the post. Click to read more...</p>
-                        <div class="post-links">
-                            <a href="linkedin-posts.html#post2" class="read-more">Read More</a>
-                            <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7237728418488832000" target="_blank" class="view-on-linkedin">View on LinkedIn</a>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <h3>Post Title 3</h3>
-                        <p>Brief description of the post. Click to read more...</p>
-                        <div class="post-links">
-                            <a href="linkedin-posts.html#post2" class="read-more">Read More</a>
-                            <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7256602882702000130" target="_blank" class="view-on-linkedin">View on LinkedIn</a>
-                        </div>
-                    </div>
-                    <!-- Add more post previews here -->
+                    <button class="carousel-button next" onclick="scrollLinkedInPosts(1)">&#10095;</button>
                 </div>
-                <a href="linkedin-posts.html" class="cta-button">View All Posts</a>
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToLinkedInPost(0)"></span>
+                    <span class="indicator" onclick="goToLinkedInPost(1)"></span>
+                    <span class="indicator" onclick="goToLinkedInPost(2)"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -266,7 +301,7 @@
                         <li><a href="#experiences">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#articles">Articles</a></li>
-                        <li><a href="#linkedin">LinkedIn posts</a></li>
+                        <li><a href="#linkedin-posts">LinkedIn posts</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
