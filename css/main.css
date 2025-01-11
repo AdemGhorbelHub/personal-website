@@ -466,7 +466,7 @@ section h2 {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: #bbb;
+    background-color: #bbb; /* Default color for inactive indicators */
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
@@ -474,7 +474,7 @@ section h2 {
 }
 
 .carousel-indicators .indicator.active {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Blue color for active indicator */
 }
 
 /* Contact Form */
